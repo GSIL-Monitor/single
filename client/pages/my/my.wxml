@@ -1,0 +1,19 @@
+<!--client/pages/my/my.wxml-->
+<view class='my'>
+  <view class='hd'>
+    <!-- <image class='bg' src='/assets/images/bg.jpg'></image> -->
+    <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+  <view class='bd'>
+  <van-cell-group>
+      <van-cell title="基本信息" url="/pages/basic/basic" is-link />
+      <van-cell title="个性信息" url="/pages/personal/personal" is-link border="{{ false }}" />
+    </van-cell-group>
+    <view class='h10'></view>
+    <van-cell-group>
+      <van-cell title="我的订单" url="/pages/myOrder/myOrder" is-link />
+      <van-cell title="联系客服" url="/pages/service/service" is-link border="{{ false }}" />
+    </van-cell-group>
+  </view>
+</view>

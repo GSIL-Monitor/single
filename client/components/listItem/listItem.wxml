@@ -1,0 +1,17 @@
+<!--components/listItem/listItem.wxml-->
+<view class='list-item'>
+  <image src='/assets/images/avatar.jpg'></image>
+  <view class='con'>
+    <view class='name'>小小</view>
+    <view class='sex-birth'>
+      <text>女</text>
+      <text>12-1</text>
+    </view>
+    <block wx:if="{{likeIf}}">
+      <van-icon name="like" class='like checked' bindtap='lighten' />
+    </block>
+    <block wx:else>
+      <van-icon name="like-o" class='like' bindtap='lighten' />
+    </block>
+  </view>
+</view>

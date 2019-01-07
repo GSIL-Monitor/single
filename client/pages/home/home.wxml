@@ -1,0 +1,9 @@
+<!--client/pages/home/home.wxml-->
+<view class="home">
+  <view class='flex1 relative'>
+    <image src="/assets/images/1.png"></image>
+  </view>
+  <view class='flex1'>
+    <van-button type="danger" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" plain>HELLO，开启致单身之旅</van-button>
+  </view>
+</view>

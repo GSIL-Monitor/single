@@ -1,0 +1,23 @@
+<!--client/pages/friends/friends.wxml-->
+<swiper class='slide-banner' indicator-dots  vertical>
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" mode='aspectFill' />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='my-friends'>
+  <view class='hd'>
+    我的单友
+  </view>
+  <view class='bd'>
+    <view class='li'>
+      <listItem class="list-item-out"></listItem>
+    </view>
+    <view class='li'>
+      <listItem class="list-item-out"></listItem>
+    </view>
+  </view>
+</view>
+<van-dialog id="van-dialog"  />
+<van-toast id="van-toast" />

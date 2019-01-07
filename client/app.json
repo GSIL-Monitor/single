@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/notAlone/notAlone",
+    "pages/home/home",
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/basic/basic",
+    "pages/friends/friends",
+    "pages/my/my",
+    "pages/myOrder/myOrder",
+    "pages/order/order",
+    "pages/personal/personal",
+    "pages/service/service"
+  ],
+  "window":{
+    "backgroundColor":"#f5f5f5",
+    "navigationBarBackgroundColor": "#e8b1dd",
+    "navigationBarTitleText": "致单身",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#f474da",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/notAlone/notAlone",
+        "text": "脱单"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "单友圈"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "本汪"
+      }
+    ]
+  }
+}

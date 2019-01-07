@@ -1,0 +1,9 @@
+<!--pages/basic/basic.wxml-->
+<van-cell-group>
+  <van-cell title="姓名" value="{{basicInfoListData.name}}" />
+  <van-cell title="手机号" value="{{basicInfoListData.tel}}" />
+  <van-cell title="收货地址" value="{{basicInfoListData.address}}" border="{{ false }}" />
+</van-cell-group>
+<view class='ft-btn'>
+  <van-button type="primary" bindtap="save" block>保存</van-button>
+</view>

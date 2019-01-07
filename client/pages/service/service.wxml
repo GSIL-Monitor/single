@@ -1,0 +1,5 @@
+<!--client/pages/service/service.wxml-->
+<van-cell-group>
+  <van-cell title="客服微信" value="weixinhao" />
+  <van-cell title="客服热线" bindtap="phoneCall" value="1340000" border="{{ false }}" is-link />
+</van-cell-group>

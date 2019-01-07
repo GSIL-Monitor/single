@@ -1,0 +1,7 @@
+<!--client/pages/notAlone/notAlone.wxml-->
+<view class='not-alone'>
+  <image wx:for="{{goodsListArr}}" src="{{item.imgUrl_pre || '/assets/images/no_img.png'}}" mode="aspectFill" data-id="{{item.id}}" bindtap='goDetail' wx:key="item.id"></image>
+  <view class="more" wx:if="{{moreIf}}">
+    <text>我是有底线的</text>
+  </view>
+</view>

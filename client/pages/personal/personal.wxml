@@ -1,0 +1,26 @@
+<!--client/pages/personal/personal.wxml-->
+<view class='personal'>
+  <van-cell-group>
+    <van-field label="微信号" value="{{wxNumber}}" placeholder="请输入" bind:change="wxNumberChange" required clearable />
+    <van-cell title="性别" bindtap="sexChoose" value="{{sex}}" is-link required />
+    <van-cell title="生日" bindchange="birthChoose" class="birth-cell" is-link required>
+      <picker class='birth-picker' mode="date" value="{{date}}" start="1900-01-01" end="2050-12-31" bindchange="birthChoose">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </van-cell>
+    <van-field label="身高" bind:change="heightChange" value="{{height}}" placeholder="选填" clearable />
+    <van-field label="体重" bind:change="weightChange" value="{{weight}}" placeholder="选填" clearable />
+    <van-field label="学历" bind:change="educationChange" value="{{education}}" placeholder="选填" clearable />
+    <van-field label="职业" bind:change="occupationChange" value="{{occupation}}" placeholder="选填" clearable />
+    <van-field label="特长" bind:change="specialityChange" value="{{speciality}}" placeholder="选填" clearable />
+    <van-field label="爱好" bind:change="hobbyChange" value="{{hobby}}" placeholder="选填" clearable />
+    <van-field label="个性签名" bind:change="signatureChange" value="{{signature}}" type="textarea" class="signature" placeholder="选填" autosize clearable />
+  </van-cell-group>
+</view>
+<view class='ft-btn'>
+  <van-button type="primary" bindtap="save" block>保存</van-button>
+</view>
+<van-action-sheet show="{{ sexShow }}" actions="{{ sexActions }}" bind:close="sexClose" bind:select="sexSelect" />
+<van-toast id="van-toast" />

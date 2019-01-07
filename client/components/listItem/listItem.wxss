@@ -1,0 +1,36 @@
+/* components/listItem/listItem.wxss */
+
+.list-item {
+  position: relative;
+  height: 100rpx;
+  padding-left: 120rpx;
+  background: #fff;
+}
+
+.list-item image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.list-item .con .name {
+  padding: 14rpx 0 20rpx;
+}
+
+.list-item .sex-birth {
+  font-size: 24rpx;
+}
+
+.list-item .con .like {
+  position: absolute;
+  top: 14rpx;
+  right: 20rpx;
+  color: #ccc;
+  font-size: 32rpx;
+}
+
+.list-item .con .like.checked {
+  color: red;
+}
